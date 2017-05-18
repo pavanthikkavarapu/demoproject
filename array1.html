@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#div1{
+
+border:2px solid blue;
+width:100px;
+float:left;
+text-align:center;
+margin:5px;
+background-color:light-yellow;
+color:blue;
+}
+</style>
+</head>
+
+
+<body>
+<h3>JAVASCRIPT PROGRAMMING</h3>
+<hr/>
+<button onclick="f1()">Getcourses</button>
+<div id="div1">
+</div>
+
+<script>
+
+function f1(){
+var ar=["html5","css3","javascript","Angularjs","Angular2"];
+
+var obj=document.getElementById("div1");
+var str=" ";
+for(var i=0;i<ar.length;i++){
+
+str=str+"<p>"+ar[i]+"</p>";
+
+obj.innerHtml=str;
+}
+
+
+}
+
+
+</script>
+</body>
+</html>
